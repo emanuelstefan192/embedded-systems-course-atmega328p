@@ -26,16 +26,16 @@ Found a bug or you just want to contribute to this project ? Please raise an iss
 
 ## Roadmap
 
-[x] GPIO driver
-[x] ADC driver
-[x] EEPROM driver
-[x] Interrupt driver
-[x] Timer driver
-[x] PWM driver
-[] I2C driver
-[] SPI driver
-[] UART driver
-[] Unit tests
+- [x] GPIO driver
+- [x] ADC driver
+- [x] EEPROM driver
+- [x] Interrupt driver
+- [x] Timer driver
+- [x] PWM driver
+- [] I2C driver
+- [] SPI driver
+- [] UART driver
+- [] Unit tests
 
 ## Project Structure
 
