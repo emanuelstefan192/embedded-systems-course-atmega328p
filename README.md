@@ -6,7 +6,9 @@ If you are a student: please fork this repository and use it for your labs, home
 
 Found a bug or you just want to contribute to this project ? Please raise an issue and/or send a pull request.
 
-# 
+[![Run Tests](https://github.com/mamuleanu/embedded-systems-course-atmega328p/actions/workflows/tests.yml/badge.svg)](https://github.com/mamuleanu/embedded-systems-course-atmega328p/actions/workflows/tests.yml)
+
+
 ## Features
 
 - **No Arduino Libraries**: Direct register manipulation for maximum control and efficiency.
