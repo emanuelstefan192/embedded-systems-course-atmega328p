@@ -3,14 +3,18 @@
 #include "bsp/nano.h"
 
 int main(void) {
-    // Initialize Timer for Millis()
+    
     Timer0_Init();
-    // Initialize LED pin
+
+    
     GPIO_Init(LED_BUILTIN, GPIO_OUTPUT);
 
+    uint32_t last_time = 0;
+
     while (1) {
-        
-        if (Millis() % 1000 == 0) {
+            
+        if (Millis() - last_time >= 1000) {
+            last_time = Millis();
             GPIO_Toggle(LED_BUILTIN);
         }
     }
