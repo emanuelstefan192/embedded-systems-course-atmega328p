@@ -12,7 +12,7 @@ int main(void) {
         
         if (Millis() % 1000 == 0) {
             GPIO_Toggle(LED_BUILTIN);
-            for (int i = 0; i < 40; i++) {}
+            DelayT0(1);
         }
     }
 }
