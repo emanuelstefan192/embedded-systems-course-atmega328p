@@ -20,7 +20,7 @@ int main(void) {
         if (Millis() - last_time >= 1000) {
             last_time = Millis();
             GPIO_Toggle(LED_BUILTIN);
-            for (int i = 0; i < 40; i++) {}
+            DelayT0(1);
         }
     }
 }
