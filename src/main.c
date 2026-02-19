@@ -7,7 +7,6 @@ int main(void) {
     Timer0_Init();
     // Initialize LED pin
     GPIO_Init(LED_BUILTIN, GPIO_OUTPUT);
-    int state = 0;
     while (1) {
         
         if (Millis() % 1000 == 0) {
