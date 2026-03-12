@@ -1,5 +1,5 @@
 #include "drivers/timer/timer0.h"
-
+#include "usart.h"
 /**
  * @brief Initializes USART communication with the specified baud rate.
  *
@@ -48,7 +48,7 @@ int USART_Receive(void* buffer)
     int i = 0;
     uint32_t last_time = Millis();
 
-    while ((Millis() - last_time <= 1000) && (i < 50)) {
+    while ((Millis() - last_time <= TIMEOUT_USART) && (i < MAX_SIZE_RECEIVE_USART)) {
         if (UCSR0A & (1 << RXC0)) {
             data[i] = UDR0;
             last_time = Millis();

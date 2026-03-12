@@ -16,6 +16,8 @@
   */
 #define USART_Init_Default() USART_Init(16000000, 57600)
 
+#define MAX_SIZE_RECEIVE_USART 50
+#define TIMEOUT_USART 1000
   /**
    * @brief Initializes USART communication with the specified baud rate.
    *
